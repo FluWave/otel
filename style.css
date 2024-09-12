@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-head .container-nav a{
+    text-decoration: none;
+    border: none;
+    color: rgb(29, 29, 29);
+    font-size: 20px;
+    font-weight: 600;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.container-head .container-nav{
+        justify-content: space-between;
+        text-align: center;
+        word-spacing: 25px;
+        margin-top: 20px;
+    
+}
+
+.container-head .container-nav a:hover{
+    border-bottom: 1px solid red;
+    color: rgb(58, 58, 58);
+}
+
+
+.slider {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+
+.form-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(19, 19, 19, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.form-overlay h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.form-overlay form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-overlay label,
+.form-overlay input {
+    margin-bottom: 10px;
+    
+}
+
+.form-overlay button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-overlay button:hover {
+    background-color: #3e8d42;
+}
+
+.about-container{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px;
+        padding: 20px;
+        width: 60%;
+        border-radius: 10px;
+        gap: 40px;
+}
+.item {
+    width: 50%;
+}
+
+.about-container .item p{
+    padding-left: 12vh;
+}
+
+.about-container .item h1{
+    padding-left: 11vh;
+    font-size: 50px;
+}
+
+.about-container .item .about-btn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 11vh;
+    cursor: pointer;
+    border-radius: 10px;
+    
+
+}
+
+.about-container .item .about-btn:hover{
+    background-color: rgb(71, 71, 71);
+}
+
+.image-content {
+    width: 60%;
+    text-align: right;
+}
+
+.image-content img {
+    max-width: 100%;
+    
+    height: auto;
+    border-radius: 10px;
+    margin-left: 50vh;
+}
+
+.our-room .grid-item{
+    display: inline-block;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: space-around;
+        padding-right: 20px;
+        margin: 50px auto;
+        width: 30%;
+        background-color: #f0f0f0;
+}
+
+.grid-item {
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-left: 20px;
+    padding-left: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item:hover{
+    box-shadow: 2px rgb(155, 0, 0);
+    border: 2px solid red;
+}
+
+.grid-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.grid-item img:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+.gallery{
+word-spacing: 5px;
+padding-bottom: 10px;
+
+}
+
+.gallery .gallery-container img{
+    width: 90%;
+    height: auto;
+    display: inline-flex;
+    max-width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+
+    
+}
+
+.gallery .gallery-container img:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 6px 5px rgba(27, 27, 27, 0.767);
+    transform: translateX(3px);
+}
+
+.blog{
+    background-image: url(../otel/Images/about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    display: inline-block;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 40px;
+   
+    
+}
+.blog .grid-items{
+    
+    display: inline-block;
+        grid-template-columns: repeat(3, 1fr);
+        cursor: pointer;
+        
+        flex-wrap: wrap;   
+        margin: 30px auto;
+        width: 20%;
+        background-color: white;
+        border-radius: 20px;
+        margin-right: 16vh;
+        
+}
+.blog .grid-items:hover{
+    transform: scale(1.1);
+}
+
+.blog .grid-items img{
+    width: 100%;
+    
+        height: auto;
+        border-radius: 20px 20px 0 0;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form{
+
+flex-wrap: wrap;
+display: flex;
+gap: 30px;
+padding-bottom: 30px;
+justify-content: space-around;
+}
+
+.contact .form form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+    color: black;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    margin: 5px;
+    padding-right: 15px;
+    border-radius: 20px;
+    padding-top: 70px;
+    padding-left: 20px;
+    
+}
+
+.contact .form .map{
+        
+            width: 40%;
+            height: 450px;
+            object-fit: cover;
+            align-items: flex-end;
+            border-radius: 20px;
+            
+            margin-left: 90px;
+}
+
+.footer-container .ftr{
+    background-color: #2F3645;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
+    border-bottom: 2px solid rgb(167, 0, 0);
+    
+    
+    
+}
+.footer-container .ftr h2{
+    
+    border-bottom: 2px solid rgb(167, 0, 0);
+}
