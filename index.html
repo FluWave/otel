@@ -13,8 +13,8 @@
   </head>
   <body>
     <div class="container-head">
-      <div class="container-nav">
-        <a href="index.html" style="color: rgb(190, 0, 0)">Yowa</a>
+      <div class="container-nav ">
+        <a href="index.html" style="border-bottom: none; color: rgb(190, 0, 0)">Yowa</a>
         <a href="about.html">About</a>
         <a href="our-room.html" style="word-spacing: 1px">Our Room</a>
         <a href="gallery.html">Gallery</a>
@@ -60,7 +60,7 @@
       </div>
     </section>
 
-    <section class="about-container" id="about">
+    <section class="about-container " id="about">
       <div class="item">
         <h1>ABOUT US</h1>
         <p>
@@ -73,9 +73,9 @@
         </p>
         <button class="about-btn">Read More</button>
       </div>
-      <div class="image-content">
-        <img src="Images/about.png" alt="" />
-      </div>
+        <div class="image-content">
+          <img src="Images/about.png" alt="" />
+        </div>
     </section>
 
     <section class="our-room" id="our-room">
@@ -163,30 +163,31 @@
           gap: 20px;
           margin: 50px auto;
           width: 90%;
+          flex-wrap: wrap;
         "
       >
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery1.jpg" alt="Fotoğraf-1" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery2.jpg" alt="Fotoğraf-2" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery3.jpg" alt="Fotoğraf-3" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery4.jpg" alt="Fotoğraf-4" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery5.jpg" alt="Fotoğraf-5" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery6.jpg" alt="Fotoğraf-6" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery7.jpg" alt="Fotoğraf-7" />
         </div>
-        <div class="slide">
+        <div class="slideg">
           <img src="Images/gallery/gallery8.jpg" alt="Fotoğraf-8" />
         </div>
       </div>
@@ -195,7 +196,7 @@
     <section class="blog" id="blog">
       <div
         class="blog-container"
-        style="background-color: rgba(0, 0, 8, 0.384)"
+        style="background-color: rgba(0, 0, 8, 0.384); flex-wrap: initial;" 
       >
         <h1
           style="
@@ -213,6 +214,7 @@
             justify-content: center;
             color: white;
             font-size: 20px;
+            word-break: break-all;
           "
         >
           Lorem Ipsum available, but the majority have suffered
@@ -261,30 +263,32 @@
       id="contact"
       style="background-color: rgba(236, 236, 236, 0.384)"
     >
-      <div class="contact-header">
+      <div class="contact-header" style="display:block ;">
         <h1 style="font-size: 50px; display: flex; justify-content: center">
           CONTACT US
         </h1>
       </div>
-      <div class="form">
+      <div class="form" style="top: 0;">
         <form>
-          <label for="name">Name:</label>
-          <input type="text" id="isim" name="isim" placeholder="Name" />
-          <label for="surname">SurName:</label>
-          <input type="text" id="isim" name="soyisim" placeholder="Surname" />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="E-Mail" />
-
-          <label for="mesaj">Message:</label>
+          
+          <input type="text" id="isim" style="border-radius: 5px; border: none;" name="isim" placeholder="Name" />
+          <br>
+          
+          <input type="text" id="isim" style="border-radius: 5px; border: none;" name="soyisim" placeholder="Surname" />
+          <br>
+          
+          <input type="email" id="email" style="border-radius: 5px; border: none;" name="email" placeholder="E-Mail" />
+          <br>
+          
           <textarea
             id="mesaj"
-            style="height: 100px"
+            style="height: 100px; border-radius: 5px;"
             name="mesaj"
             placeholder="Message"
           ></textarea>
 
           <button
+            class="sendBtn"
             type="submit"
             style="
               width: 20%;
@@ -297,6 +301,7 @@
               margin-left: 24vh;
               padding: 15px;
               margin-top: 40px;
+              cursor: pointer;
             "
           >
             SEND
@@ -321,5 +326,6 @@
     </section>
 
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
