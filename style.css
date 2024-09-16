@@ -183,7 +183,7 @@ body{
 }
 
 .grid-item:hover{
-    box-shadow: 2px rgb(155, 0, 0);
+    box-shadow: 2px 4px 4px rgb(155, 0, 0);
     border: 2px solid red;
 }
 
