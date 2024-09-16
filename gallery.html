@@ -22,59 +22,73 @@
       </div>
     </div>
 
-
-
     <section class="gallery" id="gallery">
-                 <h1 style="justify-content: center; display: flex;
-                  font-size: 50px;">
-                  GALLERY
-                </h1>
-                  
+      <h1 style="justify-content: center; display: flex; font-size: 50px">
+        GALLERY
+      </h1>
 
-        <div class="gallery-container" style="    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Her satırda 4 sütun */
-    gap: 20px; 
-    margin: 50px auto;
-    width: 90%;">
-                  
-            <div class="slide-active">
-                <img src="Images/gallery/gallery1.jpg" alt="Fotoğraf-1" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery2.jpg" alt="Fotoğraf-2" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery3.jpg" alt="Fotoğraf-3" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery4.jpg" alt="Fotoğraf-4" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery5.jpg" alt="Fotoğraf-5" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery6.jpg" alt="Fotoğraf-6" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery7.jpg" alt="Fotoğraf-7" />
-            </div>
-            <div class="slide">
-                <img src="Images/gallery/gallery8.jpg" alt="Fotoğraf-8" />
-            </div>
+      <div
+        class="gallery-container"
+        style="
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* Her satırda 4 sütun */
+          gap: 20px;
+          margin: 50px auto;
+          width: 90%;
+        "
+      >
+        <div class="slide-active">
+          <img src="Images/gallery/gallery1.jpg" alt="Fotoğraf-1" />
         </div>
-        
+        <div class="slide">
+          <img src="Images/gallery/gallery2.jpg" alt="Fotoğraf-2" />
+        </div>
+        <div class="slide">
+          <img src="Images/gallery/gallery3.jpg" alt="Fotoğraf-3" />
+        </div>
+        <div class="slide">
+          <img src="Images/gallery/gallery4.jpg" alt="Fotoğraf-4" />
+        </div>
+        <div class="slide">
+          <img src="Images/gallery/gallery5.jpg" alt="Fotoğraf-5" />
+        </div>
+        <div class="slide">
+          <img src="Images/gallery/gallery6.jpg" alt="Fotoğraf-6" />
+        </div>
+        <div class="slide">
+          <img src="Images/gallery/gallery7.jpg" alt="Fotoğraf-7" />
+        </div>
+        <div class="slide">
+          <img src="Images/gallery/gallery8.jpg" alt="Fotoğraf-8" />
+        </div>
+      </div>
     </section>
 
-  
-
-   
-
     <section class="footer-container">
-        <footer class="ftr">
-            <h2>Contact Us</h2>
-            <h2>Menu</h2>
-            <h2>News</h2>
-        </footer>
+      <footer class="ftr">
+        <div class="ftrAbout">
+          <h2>Contact Us</h2>
+          <h4>Address</h4>
+          <h4>+01 1234569540</h4>
+          <h4>demo@gmail.com</h4>
+        </div>
+        <div class="ftrMenu" style="text-decoration: none; color: white">
+          <h2>Menu Link</h2>
+          <h4><a href="index.html">Home</a></h4>
+          <h4><a href="about.html">About</a></h4>
+          <h4><a href="our-room.html">Our Room</a></h4>
+          <h4><a href="gallery.html">Gallery</a></h4>
+          <h4><a href="blog.html">Blog</a></h4>
+          <h4><a href="contact.html">Contact Us</a></h4>
+        </div>
+        <div class="ftrNew">
+          <h2>News</h2>
+          <form>
+            <input type="email" placeholder="Enter Your Email" />
+          </form>
+          <button>Subscribe</button>
+        </div>
+      </footer>
     </section>
 
     <script src="app.js"></script>

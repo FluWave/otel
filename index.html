@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
@@ -13,8 +13,10 @@
   </head>
   <body>
     <div class="container-head">
-      <div class="container-nav ">
-        <a href="index.html" style="border-bottom: none; color: rgb(190, 0, 0)">Yowa</a>
+      <div class="container-nav">
+        <a href="index.html" style="border-bottom: none; color: rgb(190, 0, 0)"
+          >Yowa</a
+        >
         <a href="about.html">About</a>
         <a href="our-room.html" style="word-spacing: 1px">Our Room</a>
         <a href="gallery.html">Gallery</a>
@@ -43,7 +45,6 @@
         <div class="slide">
           <img src="Images/banner3.jpg" alt="Fotoğraf 3" />
         </div>
-        
       </div>
 
       <div class="form-overlay">
@@ -60,7 +61,7 @@
       </div>
     </section>
 
-    <section class="about-container " id="about">
+    <section class="about-container" id="about">
       <div class="item">
         <h1>ABOUT US</h1>
         <p>
@@ -73,12 +74,12 @@
         </p>
         <button class="about-btn">Read More</button>
       </div>
-        <div class="image-content">
-          <img src="Images/about.png" alt="" />
-        </div>
+      <div class="image-content">
+        <img src="Images/about.png" alt="" />
+      </div>
     </section>
 
-    <section class="our-room" id="our-room" style="background-color: #f0f0f0;">
+    <section class="our-room" id="our-room" style="background-color: #f0f0f0">
       <div class="item-text" style="background-color: #f0f0f0">
         <h1
           style="
@@ -196,7 +197,7 @@
     <section class="blog" id="blog">
       <div
         class="blog-container"
-        style="background-color: rgba(0, 0, 8, 0.384); flex-wrap: initial;" 
+        style="background-color: rgba(0, 0, 8, 0.384); flex-wrap: initial"
       >
         <h1
           style="
@@ -263,26 +264,43 @@
       id="contact"
       style="background-color: rgba(236, 236, 236, 0.384)"
     >
-      <div class="contact-header" style="display:block ;">
+      <div class="contact-header" style="display: block">
         <h1 style="font-size: 50px; display: flex; justify-content: center">
           CONTACT US
         </h1>
       </div>
-      <div class="form" style="top: 0;">
+      <div class="form" style="top: 0">
         <form>
-          
-          <input type="text" id="isim" style="border-radius: 5px; border: none;" name="isim" placeholder="Name" />
-          <br>
-          
-          <input type="text" id="isim" style="border-radius: 5px; border: none;" name="soyisim" placeholder="Surname" />
-          <br>
-          
-          <input type="email" id="email" style="border-radius: 5px; border: none;" name="email" placeholder="E-Mail" />
-          <br>
-          
+          <input
+            type="text"
+            id="isim"
+            style="border-radius: 5px; border: none"
+            name="isim"
+            placeholder="Name"
+          />
+          <br />
+
+          <input
+            type="text"
+            id="isim"
+            style="border-radius: 5px; border: none"
+            name="soyisim"
+            placeholder="Surname"
+          />
+          <br />
+
+          <input
+            type="email"
+            id="email"
+            style="border-radius: 5px; border: none"
+            name="email"
+            placeholder="E-Mail"
+          />
+          <br />
+
           <textarea
             id="mesaj"
-            style="height: 100px; border-radius: 5px;"
+            style="height: 100px; border-radius: 5px"
             name="mesaj"
             placeholder="Message"
           ></textarea>
@@ -319,9 +337,28 @@
 
     <section class="footer-container">
       <footer class="ftr">
-        <h2>Contact Us</h2>
-        <h2>Menu</h2>
-        <h2>News</h2>
+        <div class="ftrAbout">
+          <h2>Contact Us</h2>
+          <h4>Address</h4>
+          <h4>+01 1234569540</h4>
+          <h4>demo@gmail.com</h4>
+        </div>
+        <div class="ftrMenu" style="text-decoration: none; color: white">
+          <h2>Menu Link</h2>
+          <h4><a href="index.html">Home</a></h4>
+          <h4><a href="about.html">About</a></h4>
+          <h4><a href="our-room.html">Our Room</a></h4>
+          <h4><a href="gallery.html">Gallery</a></h4>
+          <h4><a href="blog.html">Blog</a></h4>
+          <h4><a href="contact.html">Contact Us</a></h4>
+        </div>
+        <div class="ftrNew">
+          <h2>News</h2>
+          <form>
+            <input type="email" placeholder="Enter Your Email" />
+          </form>
+          <button>Subscribe</button>
+        </div>
       </footer>
     </section>
 

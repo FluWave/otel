@@ -339,6 +339,34 @@ justify-content: space-around;
     border-bottom: 2px solid rgb(167, 0, 0);
 }
 
+.footer-container .ftrMenu a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.footer-container .ftrMenu a:hover{
+    color: rgb(226, 2, 2);
+}
+
+.footer-container .ftrNew input{
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.footer-container .ftrNew button{
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer-container .ftrNew button:hover{
+    background-color: #bb0000;
+}
+
 @media (max-width: 991px) {
 
 
