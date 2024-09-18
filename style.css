@@ -145,11 +145,12 @@ body{
 
 .image-content img {
     max-width: 100%;
-    margin-top: -88vh;
+    margin-top: -78vh;
     height: auto;
     border-radius: 10px;
     margin-left: 95vh;
     cursor: pointer;
+    margin-bottom: 35px;
 }
 
 .our-room .grid-item{
